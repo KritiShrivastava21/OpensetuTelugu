@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenSetu About Section</title>
+  <style>
+    :root {
+      --max-width: 1200px;
+      --gutter: 24px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: #1F2937;
+      background: #fff;
+    }
+    .about-wrapper {
+      background-color: #F7F9FB;
+      position: relative;
+      overflow: hidden;
+    }
+    .white-tilted-layer {
+      position: absolute; top: 60px;
+      width: 100%; height: 1300px;
+      background: white;
+      transform: skewY(-5deg);
+      z-index: 0;
+    }
+    .blue-shapes {
+      position: absolute; top: -45px; right: 0;
+      z-index: 1; transform: skewY(-5deg);
+    }
+    .blue1, .blue2 { position: absolute; transform: skewX(-30deg); }
+    .blue1 {
+      background-color: #80E9FF;
+      width: 35vw; max-width: 420px;
+      height: 25px; top: 50px; right: 10px;
+      z-index: 1;
+    }
+    .blue2 {
+      background-color: #185ADB;
+      width: 10vw; max-width: 120px;
+      height: 25px; top: 70px; right: 200px;
+      z-index: 2;
+    }
+    .section {
+      position: relative;
+      max-width: var(--max-width);
+      padding: 8rem var(--gutter) 4rem;
+      margin: 0 auto;
+      z-index: 2;
+    }
+    .about-heading {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #032E83;
+      margin: 0 0 1.5rem;
+      text-align: left;
+    }
+    .top-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+    .top-text {
+      flex: 1 1 320px;
+      max-width: 500px;
+      text-align: left;
+    }
+    .top-text .highlight {
+      color: #0A55A7;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .top-text h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0.5rem 0 1.5rem;
+      color: #032E83;
+    }
+    .top-text p {
+      color: #425466;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .top-image {
+      flex: 0 1 320px;
+      max-width: 320px;
+    }
+    .top-image img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 20px 90px rgba(0,0,0,0.12);
+      border-radius: 15px;
+      justify-items: center;
+    }
+    .grid-box {
+      background: #F5F7FA;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+    }
+    .grid-box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+    .grid-box h3 {
+      font-size: 1.2rem;
+      color: #032E83;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .grid-box p {
+      color: #425466;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+    @media (max-width: 768px) {
+      .section { padding: 6rem var(--gutter) 3rem; }
+      .about-heading {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .top-container { flex-direction: column; }
+      .top-text { text-align: center; }
+      .top-text h2 { font-size: 1.5rem; }
+    }
+    @media (max-width: 480px) {
+      .about-heading { font-size: 1.75rem; }
+      .top-text { font-size: 0.9rem; }
+      .top-text h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <section class="about-wrapper">
+    <div class="white-tilted-layer"></div>
+    <div class="blue-shapes">
+      <div class="blue1"></div>
+      <div class="blue2"></div>
+    </div>
+
+    <div class="section">
+      <div class="top-container">
+        <div class="top-text">
+          <h1 class="about-heading">మా గురించి</h1>
+          <p class="highlight">ఒకే పేరు, ఒకే భాష, ఒకే గుర్తింపు</p>
+          <h2>ఓపెన్‌సేతు అనేది భారత్ సొంత ఇంటర్నెట్‌కు వారధి.</h2>
+          <p>ప్రతి భారతీయుడు వారి మాతృభాషలో వెబ్‌ను యాక్సెస్ చేయడానికి మేము వీలు కల్పిస్తాము, ఇంగ్లీషు అవసరం లేదు, కొత్త యాప్‌లు అవసరం లేదు, గేట్ కీపర్లు అవసరం లేదు.</p>
+          <p>ఉచిత, వికేంద్రీకృత మరియు సమ్మిళిత ఇంటర్నెట్ యొక్క దృక్పథం నుండి పుట్టిన ఓపెన్‌సేతు, హ్యాండ్‌షేక్ ద్వారా ఆధారితమైన మరియు భారత్‌లో పాతుకుపోయిన బహుభాషా వెబ్‌ను అన్‌లాక్ చేయడానికి వినియోగదారులను వారి DNS సెట్టింగులను మార్చడానికి అనుమతిస్తుంది. ఇది మీ నిబంధనల ప్రకారం ఇంటర్నెట్, ఇక్కడ డొమైన్ పేర్లు విదేశీ లిపిలో లేదా కేంద్రీకృత నియంత్రణలో ఉండవు , కానీ మీ స్వంత భాషలో, మీకు స్వంతం.</p>
+          <p>మేము ఇంటర్నెట్‌ను ఏకస్వామ్య సంస్థల నుండి తిరిగి స్వాధీనం చేసుకుని, ప్రజలకు ఒకే పేరు, ఒకే భాష, ఒకే గుర్తింపును తిరిగి ఇస్తున్నాము.</p>
+        </div>
+        <div class="top-image">
+          <img src="img5.png" alt="About Image">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="grid-box">
+          <h3>బిల్డర్ల కోసం</h3>
+          <p>ఓపెన్‌సేతు అనేది ఆవిష్కరణలకు వేదిక. స్థానిక యాప్‌లను నిర్మిస్తున్న డెవలపర్‌ల నుండి డిజిటల్ గుర్తింపును తిరిగి ఊహించుకునే స్టార్టప్‌ల వరకు, భారత్ ఇప్పుడు ఆకృతికి సిద్ధంగా ఉన్న వికేంద్రీకృత పునాదిని కలిగి ఉంది. స్థానిక డొమైన్ పేర్లు, బహుభాషా లాగిన్ మరియు ఓపెన్ DNS తో, మీరు 1.4 బిలియన్ స్వరాలకు వారి స్వంత భాషలో నేరుగా మాట్లాడే సేవలను నిర్మించవచ్చు.</p>
+        </div>
+        <div class="grid-box">
+          <h3>పెట్టుబడిదారుల కోసం</h3>
+          <p>ఓపెన్ ఇంటర్నెట్‌లో భారత్ మానవాళిలో అతిపెద్ద భాగం. ఓపెన్‌సేతు కేవలం మౌలిక సదుపాయాలు మాత్రమే కాదు, ఇది ఇన్‌ఫ్రా-పవర్. భాషా అవరోధాన్ని తొలగించి, వ్యక్తులకు డిజిటల్ యాజమాన్యాన్ని తిరిగి ఇవ్వడం ద్వారా మేము తదుపరి బిలియన్ వినియోగదారులను అన్‌లాక్ చేస్తున్నాము. ఈ పర్యావరణ వ్యవస్థ OS మరియు బ్రౌజర్‌ల వంటి ఇన్‌ఫ్రా టెక్ నుండి డిజిటల్ గుర్తింపు, చెల్లింపులు, వాణిజ్యం మరియు కమ్యూనికేషన్ వంటి సేవల వరకు ప్రతిదానినీ పునర్నిర్మిస్తుంది, ఇవన్నీ భారత్ యొక్క అత్యంత పునాది పొరపై ఆధారపడి ఉంటాయి: దాని స్వంత ఇంటర్నెట్. దానిపై నిర్మించే పట్టాలు మరియు వ్యవస్థాపకులలో పెట్టుబడి పెట్టండి మరియు మీరు డిజిటల్ భారత్ యొక్క భవిష్యత్తులో పెట్టుబడి పెట్టండి.</p>
+        </div>
+        <div class="grid-box">
+          <h3>ప్రభుత్వాలకు</h3>
+          <p>డిజిటల్ ప్రజా వస్తువులు డిజిటల్ ప్రజా మౌలిక సదుపాయాలకు అర్హమైనవి. ఓపెన్‌సేతు దాని ప్రధాన భాగంలో పారదర్శకత, కలుపుగోలుతనం మరియు సార్వభౌమాధికారంతో నిర్మించబడింది. మేము ఇండియా స్టాక్ దార్శనికతకు అనుగుణంగా ఉంటాము మరియు ప్రతి పౌరుడు వారి మాతృభాషలో డిజిటల్ సేవలను పొందేలా సాధికారత కల్పిస్తాము. గ్రామీణ ప్రాప్తి నుండి జాతీయ స్థాయి వరకు, ఓపెన్‌సేతు ప్రభుత్వాలకు పూర్తి స్థాయి డిజిటల్ చేరికకు సురక్షితమైన, సార్వభౌమ మార్గాన్ని అందిస్తుంది. భారత్ ప్రపంచ ఇంటర్నెట్‌ను అందుకోవాల్సిన అవసరం లేదు . ఓపెన్‌సేతుతో, మన స్వంత భాషలో, మన స్వంత నిబంధనల ప్రకారం ముందుకు దూసుకుపోతాము.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
