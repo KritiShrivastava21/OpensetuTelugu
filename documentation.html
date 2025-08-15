@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OpenSetu Privacy Policy</title>
+  <title>OpenSetu Documentation</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -139,7 +139,7 @@ function closeMenu() {
       position: absolute;
       top: 60px;
       width: 100%;
-      height: 1250px;
+      height: 1300px;
       background: white;
       transform: skewY(-5deg);
       z-index: 0;
@@ -183,83 +183,55 @@ function closeMenu() {
       z-index: 2;
     }
 
-    h1.about-heading {
+    h1 {
       font-size: 2.3rem;
       font-weight: 700;
       color: #032E83;
-      margin-top: 0;
       margin-bottom: 40px;
     }
 
-    .top-text {
-      text-align: left;
-    }
-
-    .top-text p.highlight {
-      color: #58595a;
-      font-weight: 600;
-      font-size: .9rem;
-      margin-bottom: 30px;
-    }
-
-    .top-text h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
+    h2 {
+      font-size: 1.4rem;
       color: #032E83;
-      line-height: 1.2;
-      margin-bottom: 17px;
       margin-top: 40px;
+      margin-bottom: 16px;
+      font-weight: 600;
     }
 
-    .top-text p {
-      color: #425466;
-      font-size: .95rem;
-      font-weight: 400;
+    p {
+      font-size: 0.95rem;
       line-height: 1.6;
+      color: #425466;
       margin-bottom: 16px;
     }
 
-    @media (max-width: 768px) {
-      .section {
-        padding: 100px 20px 60px;
-      }
-
-      h1.about-heading {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-      }
-
-      .top-text h2 {
-        font-size: 1.3rem;
-        margin-top: 32px;
-      }
-
-      .top-text p {
-        font-size: .9rem;
-      }
+    a {
+      color: #185ADB;
+      text-decoration: none;
+      font-weight: 500;
     }
 
-    @media (max-width: 480px) {
-      .blue1 {
-        width: 250px;
-        right: 0;
-      }
+    a:hover {
+      text-decoration: underline;
+    }
 
-      .blue2 {
-        width: 80px;
-        right: 150px;
-      }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
 
-      .section {
-        padding: 80px 16px 50px;
-      }
+    li {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: #425466;
+    }
 
-      h1.about-heading {
-        font-size: 1.5rem;
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
       }
-
-      .top-text h2 {
-        font-size: 1.1rem;
+      h2 {
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -274,31 +246,36 @@ function closeMenu() {
     </div>
 
     <section class="section">
-  <h1 class="about-heading">ప్రైవసీ పాలసీ</h1>
+  <h1>డాక్యుమెంటేషన్</h1>
 
-  <div class="top-text">
+  <h2>OpenSetu: ఇది ఎలా పనిచేస్తుంది</h2>
+  <p>
+    OpenSetu <strong>DNS over HTTPS (DOH)</strong> ద్వారా నడిచేది, ఇది డొమైన్ నేమ్స్‌ను HTTPS పై సురక్షితంగా రిజాల్వ్ చేసే నెట్‌వర్క్ ప్రోటోకాల్. DOH మోసపూరితులు DNS క్వెరీలను స్పై చేయడం లేదా తప్పుడు మార్చే అవకాశాన్ని నిరోధించడం ద్వారా ప్రైవసీ మరియు సెక్యూరిటీని పెంపొందిస్తుంది.
+  </p>
 
-    <h2>మేము ఏం సేకరిస్తాము</h2>
-    <p>ఏమీ కాదు. <br>మేము మీ DNS క్వెరీస్, IP అడ్రస్‌లు, లేదా వినియోగ నమూనాలను లాగ్, స్టోర్ లేదా మానిటర్ చేయము. OpenSetu స్టేట్లెస్ రిజాల్వర్‌గా పనిచేస్తుంది. మేము మీ రిక్వెస్ట్‌ని ప్రాసెస్ చేసి వెంటనే మరవిపోతాము.</p>
+  <h2>భారత్ కా ఇంటర్నెట్</h2>
+  <p>
+    Bharat ka Internet <strong>Handshake</strong> పై నిర్మించబడింది, ఇది ఓపెన్-సోర్స్, డిసెంట్రలైజ్డ్ నేమింగ్ ప్రోటోకాల్, ఇది ఇంటర్నెట్ కోసం ప్రత్యామ్నాయ రూట్ జోన్‌గా పనిచేస్తుంది. ఇది సెన్సార్-రెసిస్టెంట్, తప్పుడు మార్పులకు రహిత డొమైన్ రిజాల్యూషన్‌ను సాధ్యపడిస్తుంది. మా ఇంటర్నెట్ యొక్క బ్యాక్‌బోన్.
+  </p>
+  <p>
+    త్వరలో, మేము <strong>ENS (Ethereum Name Service)</strong> మరియు <strong>IPFS (InterPlanetary File System)</strong> వంటి ప్రోటోకాల్స్‌కు మద్దతు ఇవ్వడం కూడా ప్లాన్ చేసుకున్నాము, ఇది మరింత ఓపెన్ మరియు ఇంటర్‌ఒపరబుల్ వెబ్‌ను సాధ్యపడిస్తుంది.
+  </p>
 
-    <h2>మోనటైజేషన్</h2>
-    <p>మేము ఈ సర్వీస్‌ని మోనటైజ్ చేయము.<br>ఏ అడ్స్ లేవు.<br>ఏ డేటా అమ్మకాలు లేవు.<br>ఏ హిడెన్ ట్రాకర్స్ లేవు.<br>OpenSetu ఉచితం, ఎప్పుడూ ఉచితం అవుతుంది.</p>
+  <h2>మీ స్వంత DOH ను నిర్మించండి</h2>
+  <p>
+    ఏవరికైనా DOH రిజాల్వర్‌ని నిర్మించి, భారతీయ ఇంటర్నెట్‌ను యాక్సెస్ చేయడానికి మరియు విస్తరించడానికి వీలుంది, అది ఒక పాఠశాల, యూనివర్సిటీ, స్టార్టప్, నాన్-ప్రాఫిట్ లేదా ప్రభుత్వ ఏజెన్సీ కావచ్చు.  
+    <strong>OpenSetu</strong> కేవలం ఒక ఉదాహరణ; <em>మీరు మీ స్వంతదాన్ని నడపవచ్చు.</em>
+  </p>
 
-    <h2>అన్నరికీ ఓపెన్</h2>
-    <p>OpenSetu ఓపెన్ ప్రోటోకాల్. ఎవరు అయినా తమ స్వంత వెర్షన్‌ని నిర్మించి నడపవచ్చు. స్థానిక అవసరాలకు సేవ చేయడానికి మేము డెవలపర్స్, కమ్యూనిటీస్ మరియు ప్రభుత్వాలను తమ రిజాల్వర్స్ ఏర్పాటు చేయమని ప్రోత్సహిస్తున్నాము.</p>
-
-    <h2>యూజర్ అకౌంట్స్ లేవు</h2>
-    <p>మాకు యూజర్ లాగిన్లు లేదా ప్రొఫైల్స్ లేవు.<br>సైన్-అప్ లేదా వ్యక్తిగత సమాచారం అవసరం లేదు.<br>మీకోసం గుర్తించే ఏమీ లేదు, మరియు ఇది ఉద్దేశపూర్వకంగా చేయబడింది.</p>
-
-    <h2>ఆర్కిటెక్చర్ ద్వారా అనామకంగా</h2>
-    <p>OpenSetu డిజిటల్ సార్వభౌమత్వం మరియు స్థానిక భాషల యాక్సెస్ దృష్టిలో రూపొందించబడింది. మేము సెంట్రలైజ్డ్, సర్వేలెన్స్ ఆధారిత ఇంటర్నెట్ మోడల్‌ను తిరస్కరిస్తాము. మా ఒక్క పని డొమైన్ నేమ్స్‌ను అనువదించడం. మీరెవరు అనేది గమనించడం లేదా విశ్లేషించడం కాదు.</p>
-
-    <h2>కానూను అనుగుణంగా</h2>
-    <p>రిజాల్వర్‌గా, మేము కేవలం డొమైన్ నేమ్ రిక్వెస్ట్‌లను రీడైరెక్ట్ చేస్తాము. మేము కంటెంట్‌ను హోస్ట్ లేదా సర్వ్ చేయము, మరియు ఇతరులు తమ డొమైన్‌ల కింద ప్రచురించే కంటెంట్‌ను నియంత్రించము. వినియోగదారుల స్వేచ్ఛ మరియు ప్రైవసీని రక్షిస్తూ, మేము అన్ని వర్తించే చట్టాలను అనుగుణంగా పాటిస్తాము.</p>
-
-  </div>
+  <h2>స్టాక్‌ను ఎక్స్ప్లోర్ చేయండి</h2>
+  <p>
+    <strong style="font-size: 2.5rem;">GitHub లింక్స్ త్వరలో వస్తున్నాయి...</strong>
+  </p>
 </section>
 
+
+      
+    </section>
   </section>
 
 </body>
